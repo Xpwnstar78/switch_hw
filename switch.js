@@ -1,26 +1,20 @@
-let favoriteMovie = "Star Wars";
-let moviePhrase;
-switch (favoriteMovie) {
-  case "Jaws":
-    moviePhrase = "You're gonna need a bigger boat.";
-    alert(moviePhrase);
+let item = prompt("Please choose from the following options: \nBurger \nSteak \nSalmon \nShrimp \nChicken")
+switch (item) {
+  case "Burger":
+    document.write("This item costs $10.00.");
     break;
-  case "The Shining":
-    moviePhrase = "All work and no play makes Jack a dull boy.";
-    alert(moviePhrase);
+  case "Steak":
+    document.write("This item costs $25.00.");
     break;
-  case "Star Wars":
-    moviePhrase = "Do. Or do not. There is no try";
-    alert(moviePhrase);
+  case "Salmon":
+    document.write("This item costs $20.00.");
     break;
-  case "Forest Gump":
-    moviePhrase = "Life was like a box of chocolates.";
-    alert(moviePhrase);
+  case "Shrimp":
+    document.write("This item costs $20.00.");
     break;
-  case "Back to the Future":
-    moviePhrase = "Where we're going, we don't need roads.";
-    alert(moviePhrase);
+  case "Chicken":
+    document.write("This item costs $15.00.");
     break;
   default:
-    alert("Great movie choice!")
+    console.log("Sorry, this option is not available.");
 }
